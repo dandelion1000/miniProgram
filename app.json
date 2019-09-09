@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/testcom/testcom",
+    "pages/testbase/testbase",
     "pages/logs/logs"
   ],
   "window":{

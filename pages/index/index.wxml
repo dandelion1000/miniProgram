@@ -1,74 +1,10 @@
-<!--index.wxml-->
-<!-- <import src="../components/test/test.wxml" /> -->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <!-- <template is="test">
-    <view>slot 内容发挥</view>
-  </template> -->
-  
-<my-component my-class="red-text" />
-
-  <view wx:for="{{array}}">
-   {{item}}
-  </view>
-  <!--wxml-->
-<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
-<view wx:elif="{{view == 'APP'}}"> APP </view>
-<view wx:else="{{view == 'MINA'}}"> MINA </view>
-
-<!--template-->
-<template name="staffName">
-  <view>
-    firstName: {{firstName}}, lastName: {{lastName}}
-  </view>
-</template>
-<template is="staffName" data="{{...staffA}}"></template>
-<template is="staffName" data="{{...staffB}}"></template>
-<template is="staffName" data="{{...staffC}}"></template>
-
-<!--wxs示例-->
-<wxs module="m1">
-var getMax = function(array) {
-  var max = undefined;
-  for (var i = 0; i < array.length; ++i) {
-    max = max === undefined ?
-      array[i] :
-      (max >= array[i] ? max : array[i]);
-  }
-  return max;
-}
-
-module.exports.getMax = getMax;
-</wxs>
-
-<view> {{m1.getMax(array)}} </view>
-
-
-<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
-
-<view id="outer" bindtap="handleTap1">
-  outer view
-  <view id="middle" catchtap="handleTap2">
-    middle view
-    <view id="inner" bindtap="handleTap3">
-      inner view
-    </view>
-  </view>
-</view>
-
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <button bindtap="scanTest">
-      xxxs
-    </button>
-  </view>
-  <view class="testclick">
-    <button bindtap="clickMe">点击我</button>
-  </view>
+<view class="index">
+    <navigator url="/pages/testcom/testcom?paramA=123&paramB=xyz" class="navigator">
+      <view class="navigator-text">组件DEMO</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+        <navigator url="/pages/testbase/testbase" class="navigator">
+      <view class="navigator-text">基础功能DEMO</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
 </view>
