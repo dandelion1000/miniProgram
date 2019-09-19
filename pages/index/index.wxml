@@ -1,10 +1,15 @@
-<view class="index">
+<view class="index-style">
     <navigator url="/pages/testcom/testcom?paramA=123&paramB=xyz" class="navigator">
       <view class="navigator-text">组件DEMO</view>
       <view class="navigator-arrow"></view>
     </navigator>
-        <navigator url="/pages/testbase/testbase" class="navigator">
+    <navigator url="/pages/testselect/testselect" class="navigator">
+      <view class="navigator-text">select组件</view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator url="/pages/testbase/testbase" class="navigator">
       <view class="navigator-text">基础功能DEMO</view>
       <view class="navigator-arrow"></view>
     </navigator>
+    <van-button type="danger">按钮</van-button>
 </view>

@@ -1,0 +1,13 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+  select-group
+</view>
+<select-group generic:selectable="custom-radio" />
+<view class="" hover-class="none" hover-stop-propagation="false">
+  checkbox-group
+</view>
+<select-group generic:selectable="custom-checkbox" />
+
+<view class="" hover-class="none" hover-stop-propagation="false">
+  支付测试
+</view>
+<custom-pay></custom-pay>

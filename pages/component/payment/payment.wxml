@@ -1,0 +1,9 @@
+<functional-page-navigator
+  version="develop"
+  name="requestPayment"
+  args="{{ args }}"
+  bind:success="paymentSuccess"
+  bind:fail="paymentFailed"
+>
+  <button class="payment-button">支付 0.01 元</button>
+</functional-page-navigator>

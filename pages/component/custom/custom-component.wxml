@@ -1,0 +1,21 @@
+<!-- 组件 custom-component.wxml -->
+<custom-component class="my-class">
+这段文本的颜色由组件外的 class 决定
+<view>
+{{myProperty}}
+</view>
+<button bindtap="onMyButtonTap">
+  按钮
+</button>
+
+<view>求和{{sum}}</view>
+
+<view>{{A[0].B}}</view>
+  <button bindtap='_myPrivateMethod'>_myPrivateMethod</button>
+
+<slot></slot>
+<!--触发event事件demo-->
+<button bindtap="onTap">
+点击这个按钮将触发"myevent"事件
+</button>
+</custom-component>

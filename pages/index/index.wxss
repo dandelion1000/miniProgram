@@ -1,0 +1,8 @@
+.index-style {
+  margin: 30px;
+}
+.navigator {
+  padding: 10px;
+  background: #efefef;
+  margin: 10px;
+}

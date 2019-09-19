@@ -1,14 +1,36 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/testcom/testcom",
     "pages/testbase/testbase",
+    "pages/testselect/testselect",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#E54847",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/j.png",
+      "selectedIconPath": "images/k.png"
+    },{
+      "pagePath": "pages/testbase/testbase",
+      "text": "基础组件Demo",
+      "iconPath": "images/j.png",
+      "selectedIconPath": "images/k.png"
+    },{
+      "pagePath": "pages/testselect/testselect",
+      "text": "选择组件",
+      "iconPath": "images/l.png",
+      "selectedIconPath": "images/m.png"
+    }]
   }
 }

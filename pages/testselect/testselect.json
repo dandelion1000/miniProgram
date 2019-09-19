@@ -1,0 +1,8 @@
+{
+  "usingComponents":{
+    "select-group": "../component/select/select-group",
+    "custom-radio": "../component/select/custom-radio",
+    "custom-checkbox": "../component/select/custom-checkbox",
+    "custom-pay": "../component/payment/payment"
+  }
+}

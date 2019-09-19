@@ -1,0 +1,22 @@
+{
+  "name": "studyminiprgm",
+  "version": "1.0.0",
+  "description": "mimiprogram",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandelion1000/miniProgram.git"
+  },
+  "author": "zxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dandelion1000/miniProgram/issues"
+  },
+  "homepage": "https://github.com/dandelion1000/miniProgram#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.21"
+  }
+}
